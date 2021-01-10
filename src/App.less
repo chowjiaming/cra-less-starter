@@ -1,12 +1,17 @@
+@app-primary: #0f3460;
+@app-secondary: #e94560;
+
 .App {
   text-align: center;
 }
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
+
 .App-header {
-  background-color: #0f3460;
+  background-color: @app-primary;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,9 +20,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 .App-link {
-  color: #e94560;
+  color: @app-secondary;
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -26,4 +33,3 @@
     transform: rotate(360deg);
   }
 }
-/*# sourceMappingURL=App.css.map */
